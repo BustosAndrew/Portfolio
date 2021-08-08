@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ededed;
+    font-family: "Montserrat", sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+#sticky {
+    text-align: center;
+    position: fixed;
+    top: 5%;
+    right: 2%;
+    background-color: #00b0a2;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.5);
+}
+
+#icon {
+    margin: auto;
+}
+
+#name {
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+#linkedin {
+    width: 22px;
+    height: 22px;
+}
+
+#intro {
+    display: flex;
+}
+
+.intro-txt {
+    flex: 50%;
+    margin-left: 4%;
+}
+
+#pic {
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-right: 15%;
+    width: 300px;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.7);
+}
+
+#projects {
+    margin: 3% 0;
+    margin-left: 4%;
+    margin-right: 95%;
+}
+
+#projects a {
+    display: flex;
+}
+
+#projects-btn {
+    color: white;
+    border-radius: 20%/50%;
+    background-color: #00b0a2;
+    padding: 0% 200%;
+    height: 5em;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#projects span {
+    /* font-size: 5em; */
+    padding: 10px 20px;
+}
+
+#arrow {
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.3);
+}
+
+#projects-btn p {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.project {
+    margin: 10% 5%;
+}
+
+.text {
+    flex-basis: 53%;
+}
+
+.desc {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.desc iframe {
+    flex-basis: 45%;
+}
+
+.project-link {
+    font-size: 1.3em;
+    color: white;
+    margin-top: 11%;
+    background-color: #db0013;
+    display: inline-block;
+    padding: 3%;
+    border-radius: 20%/50%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10% 5%;
+}
+
+.contact-text {
+    flex-basis: 75%;
+}
+
+.contact-me {
+    flex-basis: 10%;
+    color: white;
+    background-color: #00b0a2;
+    border-radius: 20%/50%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 1.1em;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    * {
+        margin: inherit 50%;
+    }
+
+    div {
+        text-align: center;
+        margin: auto;
+        display: block;
+    }
+    #projects {
+        margin: auto;
+        display: flex;
+    }
+    #projects-btn {
+        padding: 0% 5%;
+        height: 5em;
+    }
+
+    #name {
+        margin: auto;
+        margin-top: 2%;
+    }
+
+    #linkedin {
+        position: static;
+        margin: auto 5%;
+        margin-top: 5%;
+        width: 40px;
+        height: 40px;
+    }
+
+    #intro {
+        flex-wrap: wrap;
+    }
+
+    .intro-txt {
+        text-align: center;
+        margin: inherit auto;
+    }
+
+    #pic {
+        margin: 25%;
+        margin-left: 25%;
+        width: 200px;
+        height: 200px;
+    }
+
+    iframe {
+        margin: auto;
+        margin-top: 5%;
+        height: 250px;
+    }
+
+    .project-link {
+        margin: auto;
+        display: block;
+        padding: 20px;
+        font-size: auto;
+    }
+
+    .contact-me {
+        margin: 5% auto;
+        padding: 5%;
+        flex-basis: 35%;
+    }
+}
