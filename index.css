@@ -172,10 +172,6 @@ main {
         background: black;
     }
 
-    #last-divider {
-        height: 2px;
-    }
-
     div {
         text-align: center;
         margin: auto;
