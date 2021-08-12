@@ -186,7 +186,7 @@ main {
         display: flex;
     }
     #projects-btn {
-        padding: 0% 5%;
+        padding: 0 10%;
         height: 5em;
     }
 
