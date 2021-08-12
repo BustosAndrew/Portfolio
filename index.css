@@ -270,7 +270,7 @@ main {
 
     .contact-me {
         margin: 5% auto;
-        padding: 15px 0;
-        flex-basis: 30%;
+        padding: 15px 15px;
+        flex-basis: auto;
     }
 }
