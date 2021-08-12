@@ -4,6 +4,14 @@
     text-decoration: none;
 }
 
+.divider {
+    display: none;
+}
+
+a {
+    color: inherit;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -156,6 +164,18 @@ main {
         margin: inherit 50%;
     }
 
+    .divider {
+        display: block;
+        margin: 0 10%;
+        height: 1px;
+        border: none;
+        background: black;
+    }
+
+    #last-divider {
+        height: 2px;
+    }
+
     div {
         text-align: center;
         margin: auto;
@@ -202,19 +222,55 @@ main {
     iframe {
         margin: auto;
         margin-top: 5%;
-        height: 250px;
+        height: 200px;
+        width: 250px;
     }
 
     .project-link {
-        margin: auto;
+        margin: 0 auto;
+        margin-top: 15%;
         display: block;
         padding: 20px;
         font-size: auto;
     }
 
+    .second-link {
+        margin: 0 10%;
+        margin-top: 15%;
+    }
+
     .contact-me {
         margin: 5% auto;
-        padding: 5%;
-        flex-basis: 35%;
+        padding: 15px;
+        flex-basis: 40%;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 600px) {
+    .project-link {
+        margin: 0 auto;
+        margin-top: 15%;
+        padding: 20px;
+        font-size: auto;
+    }
+
+    iframe {
+        margin: auto;
+        margin-top: 5%;
+        height: 200px;
+        width: 250px;
+    }
+
+    #pic {
+        margin: auto;
+        margin-right: 5%;
+        width: 200px;
+        height: 200px;
+    }
+
+    .contact-me {
+        margin: 5% auto;
+        padding: 15px;
+        flex-basis: 40%;
     }
 }
