@@ -180,6 +180,7 @@ main {
     #projects {
         margin: auto;
         display: flex;
+        display: none;
     }
     #projects-btn {
         padding: 0 10%;
@@ -213,8 +214,7 @@ main {
     }
 
     #pic {
-        margin: 25% 35%;
-        margin-left: 25%;
+        margin: 25% auto;
         width: 200px;
         height: 200px;
     }
