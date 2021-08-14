@@ -46,7 +46,7 @@ main {
 }
 
 #icon {
-    margin: auto;
+    margin: 20%;
 }
 
 #name {
@@ -114,6 +114,7 @@ main {
 
 .project {
     margin: 10% 5%;
+    margin-bottom: -5%;
     background: white;
     border-radius: 20px;
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
@@ -152,6 +153,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     margin: 10% 5%;
+    margin-top: 15%;
 }
 
 .contact-text {
@@ -258,9 +260,9 @@ main {
         font-size: auto;
     }
 
-    /* .second-link {
-        margin: 15% 10%;
-    } */
+    .subtext {
+        display: none;
+    }
 
     .contact-me {
         margin: 5% auto;
