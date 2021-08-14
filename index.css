@@ -193,13 +193,12 @@ main {
 
     #linkedin {
         margin: auto 5%;
-        margin-top: 5%;
         width: 40px;
         height: 40px;
     }
 
     #github {
-        margin-top: 5%;
+        margin: auto 5%;
         width: 40px;
         height: 40px;
     }
@@ -215,7 +214,7 @@ main {
 
     #pic {
         margin: 25% 35%;
-        margin-left: 35%;
+        margin-left: 25%;
         width: 200px;
         height: 200px;
     }
