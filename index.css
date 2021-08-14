@@ -114,25 +114,33 @@ main {
 
 .project {
     margin: 10% 5%;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
 }
 
 .text {
-    flex-basis: 53%;
+    flex-basis: 40%;
+    margin: auto;
 }
 
 .desc {
+    margin: 5% auto;
     display: flex;
     flex-wrap: wrap;
 }
 
 .desc iframe {
-    flex-basis: 45%;
+    flex-basis: 50%;
+    margin: 0.5% auto;
+    margin-right: 2%;
 }
 
 .project-link {
     font-size: 1.3em;
     color: white;
-    margin-top: 11%;
+    margin-top: 10%;
+    margin: 10% auto;
     background-color: #db414e;
     display: inline-block;
     padding: 3%;
@@ -158,7 +166,7 @@ main {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
     font-size: 1.1em;
-    padding: 2%;
+    padding: 1.5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,13 +177,13 @@ main {
         margin: inherit 50%;
     }
 
-    .divider {
+    /* .divider {
         display: block;
         margin: 0 10%;
         height: 1px;
         border: none;
         background: black;
-    }
+    } */
 
     div {
         text-align: center;
@@ -224,6 +232,14 @@ main {
         height: 200px;
     }
 
+    .desc {
+        margin: 5% 0;
+    }
+
+    .desc iframe {
+        margin-right: auto;
+    }
+
     iframe {
         margin: auto;
         margin-top: 5%;
@@ -231,18 +247,20 @@ main {
         width: 250px;
     }
 
+    .text {
+        flex-basis: 65%;
+    }
+
     .project-link {
-        margin: 0 auto;
-        margin-top: 15%;
+        margin: 15%;
+        padding: 17px;
         display: block;
-        padding: 20px;
         font-size: auto;
     }
 
-    .second-link {
-        margin: 0 10%;
-        margin-top: 15%;
-    }
+    /* .second-link {
+        margin: 15% 10%;
+    } */
 
     .contact-me {
         margin: 5% auto;
@@ -274,8 +292,8 @@ main {
     }
 
     .contact-me {
-        margin: 5% auto;
-        padding: 15px 15px;
+        margin: 5% 0;
+        padding: 20px;
         flex-basis: auto;
     }
 }
