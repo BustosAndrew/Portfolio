@@ -166,7 +166,7 @@
             function checkPosition() {
                 for (let i = 0; i < cards.length; i++) {
                     let card = cards[i];
-                    let positionFromTop = cards[i].getBoundingClientRect().top + 200;
+                    let positionFromTop = cards[i].getBoundingClientRect().top + 100;
 
                     if (positionFromTop - windowHeight <= 0) {
                         card.classList.add('project-slide');
