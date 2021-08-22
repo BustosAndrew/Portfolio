@@ -4,9 +4,67 @@
     text-decoration: none;
 }
 
+nav {
+    position: sticky;
+    text-align: center;
+    z-index: 2;
+    top: 0;
+    color: white;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.75);
+}
+
 main {
     max-width: 1920px;
     margin: 0 auto;
+}
+
+#landing {
+    margin: 5%;
+    margin-top: 15%;
+}
+
+/* .sticky-landing {
+    position: sticky;
+    top: 10%;
+} */
+
+#resume {
+    float: left;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 25%;
+    border-bottom: 3px solid black;
+    padding-bottom: 5%;
+}
+
+#resume a {
+    text-align: center;
+    display: inline-block;
+    background: #db414e;
+    margin-top: 2%;
+    padding: 3%;
+    color: white;
+    border-radius: 20%/50%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#begin {
+    float: right;
+    text-align: center;
+    padding-bottom: 5%;
+    border-bottom: 3px solid black;
+}
+
+#begin a {
+    display: inline-block;
+    text-align: center;
+    background: #00b0a2;
+    color: white;
+    margin-top: 2%;
+    padding: 3%;
+    border-radius: 30%/50%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .divider {
@@ -75,6 +133,9 @@ main {
 .intro-txt {
     flex: 50%;
     margin-left: 4%;
+}
+
+.txt-slide {
     -webkit-animation: 1s ease-out 0s 1 slideInFromLeft;
     animation: 1s ease-out 0s 1 slideInFromLeft;
 }
@@ -85,6 +146,9 @@ main {
     margin-right: 15%;
     width: 300px;
     box-shadow: 0 5px 16px rgba(0, 0, 0, 0.7);
+}
+
+.pic-slide {
     -webkit-animation: 1s ease-out 0s 1 slideInFromRight;
     animation: 1s ease-out 0s 1 slideInFromRight;
 }
@@ -148,7 +212,6 @@ main {
 }
 
 .hidden {
-    /* opacity: 0; */
     visibility: hidden;
 }
 
@@ -214,8 +277,8 @@ main {
 .popup {
     -webkit-animation-name: pop;
     animation-name: pop;
-    -webkit-animation-duration: 0.5s;
-    animation-duration: 0.5s;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
 }
 
 .hover:hover {
@@ -289,6 +352,11 @@ main {
 @media (max-width: 600px) {
     * {
         margin: inherit 50%;
+    }
+
+    #landing {
+        margin: 70% 5%;
+        margin-top: 15%;
     }
 
     div {

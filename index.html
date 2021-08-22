@@ -22,7 +22,20 @@
                 </svg>
             </div>
         </a>
+        <nav>
+            <h1>REACT DEVELOPER: ANDREW BUSTOS</h1>
+        </nav>
         <main>
+            <div id="landing" class="sticky-landing">
+                <div id="resume" class="hidden">
+                    <h1>Hit the button to view my resume!</h1>
+                    <a class="landing-btn" onclick="pop(0) "href="https://drive.google.com/file/d/1lTQ3VLKDQwbUpfQ4AINbUMNoPWBPNDks/view?usp=sharing">RESUME</a>
+                </div>
+                <div id="begin" class="hidden">
+                    <h1>Take a look at my portfolio below!</h1>
+                    <a class="landing-btn" href="#name">INTRO</a>
+                </div>
+            </div>
             <div id="name">
                 <p>
                     <h4>ANDREW BUSTOS</h4>
@@ -53,12 +66,12 @@
             <br>
             <br>
             <div id="intro">
-                <div class="intro-txt">
+                <div id="text-anim" class="intro-txt hidden">
                     <h1><br>Hello there!<br><br>
                     Explore my React skills and projects below!
                     </h1>
                 </div>
-                <img id="pic" src="./cogswellphoto.jpg">
+                <img id="pic" src="./cogswellphoto.jpg" class="hidden">
             </div>
             <div id="projects" class="hover">
                 <a href="#first-proj">
@@ -179,13 +192,45 @@
                 if (contactAreaPosFromTop - windowHeight <= 0) {
                         contact_area.classList.add('contact-slide');
                         contact_area.classList.remove('hidden');
-                    }
+                }
+
+                let intro_txt = document.getElementById("text-anim");
+                let introTxtAreaPosFromTop = intro_txt.getBoundingClientRect().top;
+                if (introTxtAreaPosFromTop - windowHeight <= 0) {
+                        intro_txt.classList.add('txt-slide');
+                        intro_txt.classList.remove('hidden');
+                }
+
+                let pic = document.getElementById("pic");
+                let picAreaPosFromTop = pic.getBoundingClientRect().top;
+                if (picAreaPosFromTop - windowHeight <= 0) {
+                        pic.classList.add('pic-slide');
+                        pic.classList.remove('hidden');
+                }
+
+                let resume = document.getElementById("resume");
+                let resumePosFromTop = resume.getBoundingClientRect().top;
+                if (resumePosFromTop - windowHeight <= 0) {
+                        resume.classList.add('project-slide');
+                        resume.classList.remove('hidden');
+                }
+
+                let begin = document.getElementById("begin");
+                let beginPosFromTop = begin.getBoundingClientRect().top;
+                if (beginPosFromTop - windowHeight <= 0) {
+                        begin.classList.add('contact-slide');
+                        begin.classList.remove('hidden');
+                        // document.getElementById("landing").classList.remove("sticky-landing");
+                }
                 
             }
 
             const pop = (index) => {
                 if (index === 4) {
                     document.getElementsByClassName("contact-me")[0].className += " popup";
+                }
+                else if (index === 0) {
+                    document.getElementsByClassName("landing-btn")[0].className += " popup";
                 }
                 else {
                     const project_btns = document.getElementsByClassName('project-link');
