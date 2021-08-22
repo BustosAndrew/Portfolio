@@ -13,6 +13,7 @@
             rel="stylesheet"
         />
         <title>Andrew's Portfolio</title>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     </head>
     <body>
         <a href="#contact-area">
@@ -26,7 +27,7 @@
             <h1>REACT DEVELOPER: ANDREW BUSTOS</h1>
         </nav>
         <main>
-            <div id="landing" class="sticky-landing">
+            <div id="landing">
                 <div id="resume" class="hidden">
                     <h1>Hit the button to view my resume!</h1>
                     <a class="landing-btn" onclick="pop(0) "href="https://drive.google.com/file/d/1lTQ3VLKDQwbUpfQ4AINbUMNoPWBPNDks/view?usp=sharing">RESUME</a>
@@ -36,6 +37,9 @@
                     <a class="landing-btn" href="#name">INTRO</a>
                 </div>
             </div>
+            <lottie-player id="hello" src="https://assets10.lottiefiles.com/packages/lf20_3vbOcw.json"  background="transparent"  speed="1"  
+                style="width: 300px; height: 300px;"  loop  autoplay>
+            </lottie-player>
             <div id="name">
                 <p>
                     <h4>ANDREW BUSTOS</h4>
@@ -96,6 +100,9 @@
                 </span>
                 </a>
             </div>
+            <lottie-player id="code" src="https://assets5.lottiefiles.com/packages/lf20_foZ22A.json"  background="transparent"  speed="1"  
+            style="width: 300px; height: 300px;"  loop  autoplay>
+            </lottie-player>
             <div id="first-proj" class="project hidden">
                 <div class="desc">
                     <div class="text">
@@ -166,6 +173,9 @@
                 </div>
                 <a href="mailto:infernious@live.com" onclick="pop(4)" class="contact-me">CONTACT ME</a>
             </div>
+            <lottie-player id="ending" src="https://assets8.lottiefiles.com/packages/lf20_1LhsaB.json"  background="transparent"  speed="1"  
+            style="width: 300px; height: 300px;"  loop  autoplay>
+            </lottie-player>
         </main>
 
         <script type="text/javascript">

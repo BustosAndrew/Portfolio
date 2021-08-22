@@ -20,20 +20,24 @@ main {
 }
 
 #landing {
-    margin: 5%;
+    margin: 0 5%;
     margin-top: 15%;
 }
 
-/* .sticky-landing {
-    position: sticky;
-    top: 10%;
-} */
+#hello {
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+#code {
+    margin: 0 auto;
+}
 
 #resume {
     float: left;
     text-align: center;
     margin: auto;
-    margin-bottom: 25%;
+    margin-bottom: 0%;
     border-bottom: 3px solid black;
     padding-bottom: 5%;
 }
@@ -101,6 +105,7 @@ main {
     display: flex;
     justify-content: center;
     box-shadow: 0 5px 16px rgba(0, 0, 0, 0.5);
+    z-index: 2;
 }
 
 #icon {
@@ -163,7 +168,7 @@ main {
 }
 
 #projects {
-    margin: 3% 0;
+    margin: auto 0;
     margin-left: 4%;
     margin-right: 95%;
 }
@@ -199,8 +204,8 @@ main {
 }
 
 .project {
-    margin: 10% 5%;
-    margin-bottom: -5%;
+    margin: 5% 5%;
+    margin-bottom: 0;
     background: white;
     border-radius: 20px;
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
@@ -247,7 +252,7 @@ main {
 .contact {
     display: flex;
     flex-wrap: wrap;
-    margin: 10% 5%;
+    margin: 5% 7%;
     margin-top: 15%;
 }
 
@@ -272,6 +277,11 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#ending {
+    margin: auto;
+    margin-bottom: 10%;
 }
 
 .popup {
@@ -355,8 +365,12 @@ main {
     }
 
     #landing {
-        margin: 70% 5%;
+        margin: 10% 5%;
         margin-top: 15%;
+    }
+
+    #resume {
+        margin-bottom: 15%;
     }
 
     div {
@@ -449,6 +463,10 @@ main {
         margin-top: 15%;
         padding: 20px;
         font-size: auto;
+    }
+
+    #resume {
+        margin-bottom: 15%;
     }
 
     iframe {
