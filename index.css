@@ -466,7 +466,13 @@ main {
     }
 
     #resume {
+        float: none;
+        margin: auto;
         margin-bottom: 15%;
+    }
+
+    #begin {
+        float: none;
     }
 
     iframe {
