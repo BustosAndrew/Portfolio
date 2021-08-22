@@ -63,9 +63,19 @@ main {
     display: flex;
 }
 
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
 .intro-txt {
     flex: 50%;
     margin-left: 4%;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 
 #pic {
@@ -74,6 +84,16 @@ main {
     margin-right: 15%;
     width: 300px;
     box-shadow: 0 5px 16px rgba(0, 0, 0, 0.7);
+    animation: 1s ease-out 0s 1 slideInFromRight;
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 #projects {
@@ -120,6 +140,14 @@ main {
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
 }
 
+.project-slide {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+.hidden {
+    opacity: 0;
+}
+
 .text {
     flex-basis: 40%;
     margin: auto;
@@ -156,6 +184,10 @@ main {
     margin-top: 15%;
 }
 
+.contact-slide {
+    animation: 1s ease-out 0s 1 slideInFromRight;
+}
+
 .contact-text {
     flex-basis: 75%;
 }
@@ -174,18 +206,83 @@ main {
     align-items: center;
 }
 
+.popup {
+    animation-name: pop;
+    animation-duration: 0.3s;
+}
+
+.hover:hover {
+    animation-name: float;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.hover:not(hover) {
+    animation-name: float-down;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes float {
+    25% {
+        transform: translateY(-2.5px);
+    }
+
+    50% {
+        transform: translateY(-2.5px);
+    }
+
+    75% {
+        transform: translateY(-2.5px);
+    }
+
+    100% {
+        transform: translateY(-2.5px);
+    }
+}
+
+@keyframes float-down {
+    25% {
+        transform: translateY(2.5px);
+    }
+
+    50% {
+        transform: translateY(2.5px);
+    }
+
+    75% {
+        transform: translateY(2.5px);
+    }
+
+    100% {
+        transform: translateY(2.5px);
+    }
+}
+
+@keyframes pop {
+    25% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    75% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
 @media (max-width: 600px) {
     * {
         margin: inherit 50%;
     }
-
-    /* .divider {
-        display: block;
-        margin: 0 10%;
-        height: 1px;
-        border: none;
-        background: black;
-    } */
 
     div {
         text-align: center;
