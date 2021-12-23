@@ -244,7 +244,7 @@ main {
     margin: 10% auto;
     background-color: #db414e;
     display: inline-block;
-    padding: 3%;
+    padding: 20px;
     border-radius: 20%/50%;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
@@ -440,8 +440,8 @@ main {
     }
 
     .project-link {
-        margin: 15%;
-        padding: 17px;
+        margin: 20%;
+        padding: 25px 1px;
         display: block;
         font-size: auto;
     }
@@ -452,7 +452,7 @@ main {
 
     .contact-me {
         margin: 5% auto;
-        padding: 15px;
+        padding: 15px 5px;
         flex-basis: 40%;
     }
 }
