@@ -31,14 +31,14 @@
             <div id="landing">
                 <div id="resume" class="hidden">
                     <h1>Hit the button to view my resume!</h1>
-                    <a class="landing-btn" onclick="pop(0)" 
+                    <a class="landing-btn popup" 
                     href="https://drive.google.com/file/d/1z7KKJMDc9ocAIWc4SirGZcxaa2xAfVOP/view?usp=sharing">
                         RESUME
                     </a>
                 </div>
                 <div id="begin" class="hidden">
                     <h1>Take a look at my portfolio below!</h1>
-                    <a class="landing-btn" href="#name">INTRO</a>
+                    <a class="landing-btn popup" href="#name">INTRO</a>
                 </div>
             </div>
             <lottie-player id="hello" src="https://assets10.lottiefiles.com/packages/lf20_3vbOcw.json"  background="transparent"  speed="1"  
@@ -105,9 +105,25 @@
                         <p class="subtext">Designed to eliminate file/folder renaming bottlenecks, but for now users can
                             choose to change either files or folders.
                         </p>
-                        <a href="https://bit.ly/3yswk4V" onclick="pop(1)" class="project-link">DOWNLOAD</a>
+                        <a href="https://bit.ly/3yswk4V" class="project-link popup">DOWNLOAD</a>
                     </div>
                     <img src="./electron.png" width="560" height="400">
+                </div>
+            </div>
+            <div class="project hidden">
+                <div class="desc">
+                    <div class="text">
+                        <h1>Benzo Painting</h1>
+                        <h3>(Nextjs, EmailJS)</h3>
+                        <br>
+                        <h4>Home painting website to reach out to potential customers.</h4>
+                        <br>
+                        <br>
+                        <p>Currently servicing Central Vallye and East Bay California. Get a quote today!</p>
+                        <br>
+                        <a href="https://bit.ly/3iCrUVn" class="project-link popup">GO TO SITE</a>
+                    </div>
+                    <img src="./benxo.png" width="560">
                 </div>
             </div>
             <div class="project hidden">
@@ -124,7 +140,7 @@
                         <p class="subtext">Intended to give people a voice on how their Airbnb/hotel stay went
                             or how they feel a product delivered, if at all.
                         </p>
-                        <a href="https://bit.ly/3PW2kGd" onclick="pop(2)" class="project-link">GO TO APP</a>
+                        <a href="https://bit.ly/3PW2kGd" class="project-link popup">GO TO APP</a>
                     </div>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/LrWBNytMvZw" title="YouTube video player" 
                         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -182,7 +198,7 @@
                         <p>A react SSR app integrating Box into MS Teams to help speed up the file management process.</p>
                         <br>
                         <p class="subtext">Can also be used on the browser, just login with your Box account and get searching!</p>
-                        <a href="https://bit.ly/3IFIAns" onclick="pop(3)" class="project-link">GO TO APP</a>
+                        <a href="https://bit.ly/3IFIAns" class="project-link popup">GO TO APP</a>
                     </div>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/b1wWadjCxuE" title="YouTube video player" 
                     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -219,7 +235,7 @@
                     <br>
                     <p>Hit the contact button to send me an email! I'll get back to you shortly.</p>
                 </div>
-                <a href="mailto:infernious@live.com" onclick="pop(6)" class="contact-me">CONTACT ME</a>
+                <a href="mailto:infernious@live.com" class="contact-me popup">CONTACT ME</a>
             </div>
             <lottie-player id="ending" src="https://assets8.lottiefiles.com/packages/lf20_1LhsaB.json" renderer="canvas"  
             background="transparent"  speed="1"  
@@ -283,22 +299,6 @@
                         // document.getElementById("landing").classList.remove("sticky-landing");
                 }
                 
-            }
-
-            const pop = (index) => {
-                if (index === 4) {
-                    document.getElementsByClassName("contact-me")[0].className += " popup";
-                }
-                else if (index === 0) {
-                    document.getElementsByClassName("landing-btn")[0].className += " popup";
-                }
-                else {
-                    const project_btns = document.getElementsByClassName('project-link');
-
-                    for (let i = 0; i < project_btns.length; i++) {
-                        project_btns[index - 1].className += " popup";   
-                    }
-                }
             }
             
             window.addEventListener('scroll', checkPosition);
