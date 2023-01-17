@@ -44,10 +44,8 @@ main {
 }
 
 #resume a {
-	/* text-align: center; */
-	display: inline-block;
+	display: block;
 	background: #db414e;
-	margin-top: 2%;
 	color: white;
 	border-radius: 20%/50%;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
@@ -60,11 +58,9 @@ main {
 }
 
 #begin a {
-	display: inline-block;
-	/* text-align: center; */
+	display: block;
 	background: #00b0a2;
 	color: white;
-	margin-top: 2%;
 	border-radius: 30%/50%;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
@@ -260,7 +256,8 @@ main {
 .landing-btn {
 	padding: 20px;
 	font-size: 1.3em;
-	width: auto;
+	margin: 5% auto;
+	width: 20%;
 }
 
 .contact {
@@ -473,6 +470,7 @@ main {
 	.landing-btn {
 		padding: 25px 1px;
 		font-size: auto;
+		width: 50%;
 	}
 
 	.subtext {
@@ -504,6 +502,7 @@ main {
 	.landing-btn {
 		padding: 20px;
 		font-size: auto;
+		max-width: 50%;
 	}
 
 	#resume {
