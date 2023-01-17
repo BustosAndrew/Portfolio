@@ -471,6 +471,11 @@ main {
 		font-size: auto;
 	}
 
+	.landing-btn {
+		padding: 25px 1px;
+		font-size: auto;
+	}
+
 	.subtext {
 		display: none;
 	}
@@ -493,6 +498,11 @@ main {
 	.project-link {
 		margin: 0 auto;
 		margin-top: 15%;
+		padding: 20px;
+		font-size: auto;
+	}
+
+	.landing-btn {
 		padding: 20px;
 		font-size: auto;
 	}
