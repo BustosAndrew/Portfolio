@@ -260,6 +260,7 @@ main {
 .landing-btn {
 	padding: 20px;
 	font-size: 1.3em;
+	width: auto;
 }
 
 .contact {
