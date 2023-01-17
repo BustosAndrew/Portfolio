@@ -48,7 +48,6 @@ main {
 	display: inline-block;
 	background: #db414e;
 	margin-top: 2%;
-	padding: 3%;
 	color: white;
 	border-radius: 20%/50%;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
@@ -66,7 +65,6 @@ main {
 	background: #00b0a2;
 	color: white;
 	margin-top: 2%;
-	padding: 3%;
 	border-radius: 30%/50%;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
