@@ -45,7 +45,7 @@ main {
 
 #resume a {
 	/* text-align: center; */
-	/* display: inline-block; */
+	display: inline-block;
 	background: #db414e;
 	margin-top: 2%;
 	color: white;
@@ -60,7 +60,7 @@ main {
 }
 
 #begin a {
-	/* display: inline-block; */
+	display: inline-block;
 	/* text-align: center; */
 	background: #00b0a2;
 	color: white;
