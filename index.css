@@ -20,7 +20,7 @@ main {
 }
 
 #landing {
-	margin: 15% 0;
+	margin: 5% 0;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -30,7 +30,6 @@ main {
 
 #hello {
 	margin: 0 auto;
-	margin-bottom: 5%;
 }
 
 #code {
